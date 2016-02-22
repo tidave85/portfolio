@@ -1,0 +1,147 @@
+/********************************
+LOGO AND HEADER 
+*********************************/
+
+.title, .subTitle{
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+
+.title{
+	width: 60%;
+}
+
+.subTitle{
+	width: 50%;
+}
+
+.hr{
+	border-top: 2px solid #000000;
+	width: 50%;
+}
+
+.hrSmall, .hrSmaller{
+	border-top: 2px solid #000000;
+	width: 20%;
+	margin:2.5em auto;
+}
+
+.hrSmaller{
+	width: 10%;	
+}
+
+header{
+	margin-top:2em;
+}
+
+header h1, header h2{
+	margin: auto;
+    font-family: haymaker;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding-top:2%;
+}
+
+header h1{
+	margin-top: 0.4em;
+	font-size: 7em;
+	line-height: 1em;
+}
+
+header h2{
+	font-size: 3.2em;
+	border-top:0;
+}
+
+/********************************
+MAIN NAVIGATION 
+*********************************/
+nav{
+	width: 60%;
+	margin: 5em auto 0;
+}
+
+nav ul{
+	text-align:center;
+	padding:0;
+}
+
+nav ul li{
+	display: inline-block;
+	font-family: haymaker;
+	font-size:2em;
+	text-align:center;
+	margin: 0 1.2em;
+}
+
+nav a{
+	color:#000000;
+	border-bottom: 2px solid transparent;
+	transition: border-color .4s ease-in-out;
+    -webkit-transition: border-color .4s ease-in-out;
+    -moz-transition: border-color .4s ease-in-out;
+}
+
+nav a:hover, nav a:focus{
+	text-decoration:none;
+	color:#000000;
+	border-bottom-color: #000000;
+}
+
+/********************************
+MEDIA QUERY
+*********************************/
+
+@media screen and (max-width: 1380px){
+	header h1{
+		font-size:6em;
+	}
+	header h2{
+		font-size: 2.2em;
+	}
+}
+
+@media screen and (max-width: 1115px){
+	nav ul li{
+		font-size: 1.7em;
+		margin: 1 0.6em;
+	}
+}
+
+@media screen and (max-width: 1065px){
+	header h1{
+		font-size:4em;
+	}
+	header h2{
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 960px){
+	nav ul li{
+		font-size: 1.2em;
+		margin: 1 0.6em;
+	}
+}
+
+@media screen and (max-width: 720px){
+	header h1{
+		font-size:1.5em;
+		border-top:0;
+		margin-top:0;
+	}
+	
+	header h2{
+		font-size: 1em;
+	}
+
+	.hrSmall, .hrSmaller{
+		margin:1em auto;
+	}
+	
+	nav ul li{
+		display: block;
+		margin: 1em 0;
+	}
+}
